@@ -2,9 +2,7 @@ package com.hkjinlee.sleepcover;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.util.Log;
 
 /**
@@ -54,6 +52,7 @@ public class ForwardActivity extends Activity implements Constants {
      *
      */
     private void launchReaderActivity(Intent i) {
+        Log.d(TAG, "launchReaderActivity()");
         Preferences prefs = Preferences.getInstance(this);
 
         AppInfo reader = prefs.readDefaultReader(i.getType());
@@ -77,7 +76,19 @@ public class ForwardActivity extends Activity implements Constants {
     private void launchReaderChooseActivity(String mimeType) {
         Intent i = new Intent(ACTION_CHOOSE_READER).setType(mimeType);
         i.setClass(this, ReaderChooseActivity.class);
-        startActivity(i);
+        startActivityForResult(i, NOTIFY_READER_CHOICE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d(TAG, "onActivityResult()");
+
+        if (requestCode == NOTIFY_READER_CHOICE) {
+            if (resultCode == RESULT_OK) {
+                launchReaderActivity(getIntent());
+            }
+        }
     }
 
     @Override

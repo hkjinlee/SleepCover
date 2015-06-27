@@ -55,7 +55,7 @@ public class ReaderChooseActivity extends Activity implements Constants {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 AppInfo reader = (AppInfo) readerListAdapter.getItem(position);
-                saveDefaultReaderPreference(reader);
+                onDefaultReaderChosen(reader);
             }
         });
     }
@@ -66,9 +66,10 @@ public class ReaderChooseActivity extends Activity implements Constants {
      *
      * @param reader
      */
-    private void saveDefaultReaderPreference(AppInfo reader) {
+    private void onDefaultReaderChosen(AppInfo reader) {
         Preferences prefs = Preferences.getInstance(this);
         prefs.writeDefaultReader(getIntent().getType(), reader);
+        setResult(RESULT_OK);
         finish();
     }
 

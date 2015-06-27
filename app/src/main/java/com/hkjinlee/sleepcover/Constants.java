@@ -36,7 +36,5 @@ public interface Constants {
      * Action name for invoking ReaderChooseActivity
      */
     String ACTION_CHOOSE_READER = "com.hkjinlee.sleepcover.ACTION_CHOOSE_READER";
-
-    String IMAGE_FORMAT_JPG = "JPEG";
-    String IMAGE_FORMAT_PNG = "PNG";
+    int NOTIFY_READER_CHOICE = 1001;
 }

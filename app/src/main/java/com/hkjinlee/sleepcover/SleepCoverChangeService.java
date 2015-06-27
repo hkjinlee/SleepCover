@@ -16,10 +16,18 @@ public class SleepCoverChangeService extends IntentService {
     private static final String SERVICE_NAME = "SleepCoverChangeService";
     private static final String TAG = SERVICE_NAME;
 
+    /**
+     * Constructor
+     */
     public SleepCoverChangeService() {
         super(SERVICE_NAME);
     }
 
+    /**
+     *
+     *
+     * @param intent
+     */
     @Override
     protected void onHandleIntent(Intent intent) {
         Log.d(TAG, "Loading ebook " + intent.getDataString());
