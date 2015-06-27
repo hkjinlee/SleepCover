@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SleepCover</string>
+
+    <string name="title_activity_view">SleepCover</string>
+    <string name="title_activity_reader_choose">Choose Reader App</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="default_reader">Default Reader App</string>
+    <string name="default_reader_epub">For EPUB</string>
+    <string name="default_reader_pdf">For PDF</string>
+    <string name="default_reader_summary_none">(Not selected yet)</string>
+    <string name="setting">Settings</string>
+    <string name="change_lockscreen">Change lockscreen</string>
+    <string name="change_lockscreen_summary_on">Changes book cover on sleep mode</string>
+    <string name="change_lockscreen_summary_off">Does not change book cover on sleep mode</string>
+    <string name="show_log">Show debug log</string>
+    <string name="show_log_summary_on">Shows some Toast messages while running</string>
+    <string name="show_log_summary_off">Does not show some Toast messages while running</string>
+    <string name="clear_prefs">Clear preferences</string>
+    <string name="misc">Miscellaneous</string>
+    <string name="about">About this app</string>
+    <string name="test_launch_button">Test Launch</string>
+
+    <!-- Preference reset dialog -->
+    <string name="title_warning">Warning</string>
+    <string name="message_warning_prefs_clear">Preferences will be reset. Are you sure?</string>
+
+    <!-- About dialog -->
+    <string name="title_about">About BeautySleep</string>
+    <string name="message_about">Just read the book using your favoriate reader via this app, this app will change the cover screen automatically.</string>
+    <string name="message_credit"><![CDATA[
+**Supported Fileformats:**<br />
+- EPUB<br/>
+<br/>
+**Supported Devices:**<br />
+- Boyue T62+<br/>
+<br/>
+**Created by:**<br />
+*Jin, Heonkyu* (https://github.com/hkjinlee)<br />
+<br/>
+**This app uses:**<br />
+- Epublib by Paul Siegmann (http://www.siegmann.nl/epublib)<br />
+- AndDown by CommonsWare (https://github.com/commonsguy/cwac-anddown)
+    ]]></string>
+
+    <string name="message_warning_unsupported_device">Lockscreen change is not supported for this model</string>
+
+    <string name="error_no_sample_epub">No epub sample found</string>
+    <string name="error_file_not_found">File not found</string>
+
+</resources>

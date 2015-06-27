@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/default_reader">
+
+        <Preference
+            android:key="default_reader_epub"
+            android:title="@string/default_reader_epub">
+            <intent
+                android:targetClass=".ReaderChooseActivity"
+                android:action="com.hkjinlee.sleepcover.ACTION_CHOOSE_READER"
+                android:mimeType="application/epub+zip"/>
+        </Preference>
+
+        <Preference
+            android:key="default_reader_pdf"
+            android:title="@string/default_reader_pdf">
+            <intent
+                android:targetClass=".ReaderChooseActivity"
+                android:action="com.hkjinlee.sleepcover.ACTION_CHOOSE_READER"
+                android:mimeType="application/pdf"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/setting">
+
+        <CheckBoxPreference
+            android:key="change_lockscreen"
+            android:title="@string/change_lockscreen"
+            android:defaultValue="true"
+            android:summaryOn="@string/change_lockscreen_summary_on"
+            android:summaryOff="@string/change_lockscreen_summary_off"
+            />
+
+        <CheckBoxPreference
+            android:key="show_log"
+            android:title="@string/show_log"
+            android:defaultValue="false"
+            android:summaryOn="@string/show_log_summary_on"
+            android:summaryOff="@string/show_log_summary_off"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/misc">
+
+        <Preference
+            android:key="clear_prefs"
+            android:title="@string/clear_prefs" />
+
+        <Preference
+            android:key="about"
+            android:title="@string/about" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

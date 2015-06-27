@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<resources>
+  <string name="clear_prefs">설정값 초기화</string>
+  <string name="default_reader">기본 뷰어앱</string>
+  <string name="default_reader_epub">EPUB 파일용</string>
+  <string name="default_reader_pdf">PDF 파일용</string>
+  <string name="misc">기타</string>
+  <string name="show_log">상세로그 화면출력</string>
+  <string name="change_lockscreen">슬립화면 교체</string>
+  <string name="title_activity_reader_choose">기본뷰어 선택</string>
+  <string name="message_warning_unsupported_device">슬립화면을 교체할 수 없는 기종입니다</string>
+  <string name="message_warning_prefs_clear">설정값이 초기화됩니다. 진행하시겠습니까?</string>
+  <string name="setting">동작설정</string>
+</resources>
